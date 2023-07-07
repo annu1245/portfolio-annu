@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&family=Ysabeau:ital,wght@1,300&display=swap');
 :root {
-    --primary-color:#e879f9;
+    --primary-color:#D349E8;
+    --sec-color:#6b6b6b;
+    --section-color:#f1f2f5;
   }
 
 body{
@@ -11,11 +13,12 @@ body{
 
 .nav{
     background-color: var(--primary-color);
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
+    padding: 1rem;
 }
 
 .nav-list ul{
@@ -27,8 +30,79 @@ body{
     padding: 0rem 2rem;
 }
 
-hero{
-    font-weight: 800;
-    padding: 1rem 0rem 0rem 1rem;
-    font-size: 1.7rem;
+.hero{
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-heading{
+    color:var(--primary-color)
+}
+
+.hero .hero-img{
+    max-width: 550px;
+    margin: auto;
+    display: block;
+    padding-bottom: 2rem;
+}
+.pos{
+    color: var(--sec-color);
+}
+
+.technology, .project, .blog{
+    max-width: 1200px;
+    margin:auto ;
+    background-color: var(--section-color);
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem 0rem;
+}
+.lang{
+    font-size: 1.4rem;
+}
+.project{
+    background-color: white;
+}
+
+.prim-button{
+    background-color: var(--primary-color);
+    padding: 0.8rem 1.4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    border:none;
+    color:white;
+}
+
+.sec-button{
+    padding: 0.8rem 1.4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
+}
+.prim-button:hover{
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
+    background-color: var(--section-color);
+}
+.sec-button:hover{
+    background-color: var(--primary-color);
+    color:var(--section-color);
+} 
+
+footer{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top:20px;
+    padding: 0.5rem 0rem;
+    background-color: var(--primary-color);
+}
+
+footer ul > li {
+    display: inline;
+    padding: 0rem 2rem 2rem 1rem;
 }
